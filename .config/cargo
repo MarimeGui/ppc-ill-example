@@ -1,0 +1,5 @@
+[build]
+target = "powerpc-none-eabi.json"
+
+[target.powerpc-none-eabi]
+rustflags = ["-C", "target-cpu=750", "-C", "target-feature=hard-float"]

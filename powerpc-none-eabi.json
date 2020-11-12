@@ -1,0 +1,25 @@
+{
+  "llvm-target": "powerpc-none-eabi",
+  "arch": "powerpc",
+  "target-endian": "big",
+  "target-pointer-width": "32",
+  "target-c-int-width": "32",
+  "target-mcount": "_mcount",
+  "max-atomic-width": 32,
+  "data-layout": "E-m:e-p:32:32-i64:64-n32",
+  "cpu": "750",
+  "features": "hard-float",
+  "os": "none",
+  "env": "",
+  "vendor": "",
+  "executables": true,
+  "relro-level": "full",
+  "linker-flavor": "ld.lld",
+  "linker": "rust-lld",
+  "linker-is-gnu": true,
+  "pre-link-args": {
+    "ld.lld": [
+      "-Twii.ld"
+    ]
+  }
+}
